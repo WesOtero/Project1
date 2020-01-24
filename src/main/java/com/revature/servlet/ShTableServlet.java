@@ -52,6 +52,9 @@ public class ShTableServlet extends HttpServlet {
 
 		out.println(htmlTemplate.displayHeader());	
 		out.println(htmlTemplate.displayNav());
+		out.println("<div class='container';>");
+
+		out.println("<a href='http://localhost:8080/Project1.0/'>HOME</a>");
 		out.println("<h2>Superhumans:</h2>");	
 		out.println("<table  class='table'>");
 		out.println("<tr>");
@@ -69,10 +72,7 @@ public class ShTableServlet extends HttpServlet {
 							+ "</td> <td>" + superhuman.getHometown() + "</td> <td>" + superhuman.getAlignment() + "</td></tr>");
 		}
 		
-		response.setContentType("text/html");
 		
-		out.println(htmlTemplate.displayHeader());
-		out.println("<a href='http://localhost:8080/Project1.0/'>HOME</a>");
 		out.println(htmlTemplate.displayFooter());
 
 	}

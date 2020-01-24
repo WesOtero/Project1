@@ -9,14 +9,14 @@ public class HTMLTemplateService implements HTMLTemplate {
 				+ "		integrity=\"sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh\"\r\n"
 				+ "		crossorigin=\"anonymous\">\r\n" + "\r\n"
 				+ "<link rel=\"icon\" type=\"image/x-icon\" href=\"index.ico\">\r\n" + "</head>\r\n"
-				+ "<body class=\"text-center\">";
+				+ "<body class=\"text-center\" style='background-color: #F0F0F0;'>";
 	}
-
+ 
 	public String displayNav() {
-		return "<nav class=\"navbar navbar-expand-lg navbar-light bg-light\">\r\n" + 
+		return "<nav class=\"navbar navbar-expand-lg navbar-dark bg-dark\" style='margin-bottom: 60px;'>\r\n" + 
 				"		<a class=\"navbar-brand\" href='http://localhost:8080/Project1.0/'> <img\r\n" + 
 				"			src=\"https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F2.bp.blogspot.com%2F-CfcNNFkQgKg%2FVVA2-IZrYMI%2FAAAAAAAACW4%2F2UKFilGssf0%2Fs1600%2FMarvel-comics-logo-vector.png&f=1&nofb=1\"\r\n" + 
-				"			alt=\"Smiley face\" height=\"80\" width=\"300\">\r\n" + 
+				"			alt=\"Smiley face\"  height=\"110\" width=\"240\">\r\n" + 
 				"		</a>\r\n" + 
 				"		<button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\"\r\n" + 
 				"			data-target=\"#navbarSupportedContent\"\r\n" + 

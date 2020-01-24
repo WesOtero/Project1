@@ -20,7 +20,7 @@ public class ConnectionUtil {
 	private ConnectionUtil() {
 
 		url = "jdbc:postgresql://" + System.getenv("POSTGRESS_2001_URL") + ":5432/SuperHumans";
-		System.out.println(url);
+		LogUtil.info("Connected to DB.");
 		username = System.getenv("POSTGRESS_2001_USERNAME");
 		password = System.getenv("POSTGRESS_2001_PASSWORD");
 		try {

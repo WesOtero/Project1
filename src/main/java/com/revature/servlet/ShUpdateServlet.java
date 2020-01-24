@@ -60,7 +60,7 @@ public class ShUpdateServlet extends HttpServlet {
 		out.println(htmlTemplate.displayHeader());
 
 		out.println(htmlTemplate.displayNav());
-		out.println("<h2>Superhuman Removed...</h2>");
+		out.println("<h2>Superhuman Updated...</h2>");
 		out.println("<a href='http://localhost:8080/Project1.0/'>HOME</a>");
 		out.println(htmlTemplate.displayFooter());
 		doGet(request, response);
