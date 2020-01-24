@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Marvel Superhumans</title>
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+	integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+	crossorigin="anonymous">
+
+<link rel="icon" type="image/x-icon" href="index.ico">
+</head>
+<body class="text-center">
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<a class="navbar-brand" href="#"> <img
+			src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F2.bp.blogspot.com%2F-CfcNNFkQgKg%2FVVA2-IZrYMI%2FAAAAAAAACW4%2F2UKFilGssf0%2Fs1600%2FMarvel-comics-logo-vector.png&f=1&nofb=1"
+			alt="Smiley face" height="80" width="300">
+		</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse"
+			data-target="#navbarSupportedContent"
+			aria-controls="navbarSupportedContent" aria-expanded="false"
+			aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<!-- Nothing to see -->
+		</div>
+	</nav>
+	<div class="container" style="margin-top: 50px; margin-left: 200px">
+
+		<div class="row">
+			<div class="col-md-5"></div>
+			<div class="col-md-2">
+				<!-- View All -->
+				<form name="table" method="post" action="shTableServlet">
+					<button value="doPost" class="btn btn-lg btn-primary btn-block"
+						type="submit">View Heros</button>
+				</form>
+				<br>
+			</div>
+		</div>
+
+		<div class="row">
+			<!-- ADD -->
+			<div class="col-md-4">
+				<form class="form-signin" action="shAddServlet" method="post">
+					<h5>ADD</h5>
+					<h6>Superhuman Name</h6>
+					<input type="text" name="superhero_name" class="form-control"
+						required autofocus>
+
+					<h6>Alias</h6>
+					<input type="text" name="superhero_alias" class="form-control"
+						required autofocus>
+
+					<h6>Hometown</h6>
+					<input type="text" name="superhero_hometown" class="form-control"
+						required autofocus>
+
+					<h6>Nemesis</h6>
+					<input type="text" name="superhero_nemesis" class="form-control"
+						required autofocus>
+
+					<h6>AffiliationId</h6>
+					<input type="text" name="superhero_affiliationid"
+						class="form-control" required autofocus> <br>
+
+					<button value="doPost" class="btn btn-lg btn-primary btn-block"
+						type="submit">Submit</button>
+				</form>
+			</div>
+			<!-- REMOVE -->
+			<div class="col-md-4">
+				<form class="form-signin" action="shRemoveServlet" method="post">
+					<h5>REMOVE</h5>
+					<h6>Superhuman Name</h6>
+					<input type="text" name="superhero_id" class="form-control"
+						required autofocus> <br>
+					<button value="doPost" class="btn btn-lg btn-primary btn-block"
+						type="submit">Submit</button>
+				</form>
+			</div>
+			<!-- Update -->
+			<div class="col-md-4">
+				<form class="form-signin" action="shUpdateServlet" method="post">
+					<h5>UPDATE</h5>
+					<h6>Superhuman ID</h6>
+					<input type="text" name="superhero_id" class="form-control"
+						required autofocus>
+					<h6>Superhuman Name</h6>
+					<input type="text" name="superhero_name" class="form-control"
+						required autofocus>
+
+					<h6>Alias</h6>
+					<input type="text" name="superhero_alias" class="form-control"
+						required autofocus>
+
+					<h6>Hometown</h6>
+					<input type="text" name="superhero_hometown" class="form-control"
+						required autofocus>
+
+					<h6>Nemesis</h6>
+					<input type="text" name="superhero_nemesis" class="form-control"
+						required autofocus>
+
+					<h6>AffiliationId</h6>
+					<input type="text" name="superhero_affiliationid"
+						class="form-control" required autofocus> <br>
+					<button value="doPost" class="btn btn-lg btn-primary btn-block"
+						type="submit">Submit</button>
+				</form>
+			</div>
+
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+		crossorigin="anonymous"></script>
+	<script
+		src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+		crossorigin="anonymous"></script>
+	<script
+		src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+		crossorigin="anonymous"></script>
+
+
+</body>
+</html>

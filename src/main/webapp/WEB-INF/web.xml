@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+  <display-name>Project1.0</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>SuperHumanServlet</servlet-name>
+    <servlet-class>
+  		com.revature.servlet.SuperHumanServlet
+  	</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SuperHumanServlet</servlet-name>
+    <url-pattern>/superhuman</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>SuperhumanServlet</display-name>
+    <servlet-name>SuperhumanServlet</servlet-name>
+    <servlet-class>com.revature.servlet.SuperhumanServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SuperhumanServlet</servlet-name>
+    <url-pattern>/SuperhumanServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <description></description>
+    <display-name>ShAddServlet</display-name>
+    <servlet-name>ShAddServlet</servlet-name>
+    <servlet-class>com.revature.servlet.ShAddServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ShAddServlet</servlet-name>
+    <url-pattern>/ShAddServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>ShRemoveServlet</display-name>
+    <servlet-name>ShRemoveServlet</servlet-name>
+    <servlet-class>com.revature.servlet.shRemoveServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ShRemoveServlet</servlet-name>
+    <url-pattern>/ShRemoveServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>ShUpdateServlet</display-name>
+    <servlet-name>ShUpdateServlet</servlet-name>
+    <servlet-class>com.revature.servlet.ShUpdateServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ShUpdateServlet</servlet-name>
+    <url-pattern>/ShUpdateServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>ShTableServlet</display-name>
+    <servlet-name>ShTableServlet</servlet-name>
+    <servlet-class>com.revature.servlet.ShTableServlet</servlet-class>
+  </servlet> 
+  <servlet-mapping>
+    <servlet-name>ShTableServlet</servlet-name>
+    <url-pattern>/ShTableServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
